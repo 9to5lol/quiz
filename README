@@ -1,0 +1,4 @@
+sudo apt install git python3
+git clone https://github.com/9to5lol/quiz.git
+cd quiz
+python3 quiz.py 3
