@@ -133,7 +133,7 @@ def run_quiz(questions,cnt):
 
         print("\n" + "="*60)
         perc = int( (score/cnt)*100)
-        print(f"current score {score}/{cnt} ({perc} %)")
+        print(f"SCORE {score}/{cnt} ({perc} %)")
 
 if __name__ == "__main__":
     cnt = int(sys.argv[1])
