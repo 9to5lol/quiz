@@ -1358,7 +1358,8 @@ Explanation/Reference:
 ###
 ####
 #####
-Correct Answer: BD  (falsch beantwortet: A und B sind richtig!)
+Correct Answer: AB
+
 # https://www.examtopics.com/discussions/lpi/view/35200-exam-101-500-topic-1-question-15-discussion/
 HINWEIS: Es geht ja nur um die Firmware:
   A) ist logisch
