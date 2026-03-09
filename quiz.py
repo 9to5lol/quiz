@@ -87,7 +87,7 @@ def run_quiz(questions,cnt):
           break
 
         print("\n" + "="*60)
-        print(f"QUESTION {q['number']}")
+        print(f"QUESTION {q['number']} [ {i}/{cnt} ]" )
         print(q["question"])
         print()
 
@@ -132,8 +132,10 @@ def run_quiz(questions,cnt):
                 print(f"❌ Wrong! Correct answer: {q['answer']}")
 
         print("\n" + "="*60)
-        perc = int( (score/cnt)*100)
-        print(f"SCORE {score}/{cnt} ({perc} %)")
+        perc = 0
+        if score > 0:
+            perc = int((score/i)*100)
+        print(f"Current Score: {score}/{i} [{perc} %]")
 
 if __name__ == "__main__":
     cnt = int(sys.argv[1])
