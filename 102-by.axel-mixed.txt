@@ -1,0 +1,2073 @@
+QUESTION 1
+How many IP addresses can be used for unique hosts inside the IPv4 subnet 192.168.2.128/26?
+
+    A.   6
+    B.  14
+    C.  30
+    D.  62
+    E. 126
+
+Section: 109.1
+Explanation
+Explanation/Reference:
+#
+##
+###
+####
+#####
+Correct Answer: D
+
+
+
+QUESTION 2
+Which of the following IPv4 networks are reserved by IANA for private address assignment and private routing? (Choose three.)
+
+    A.   10.0.0.0/8
+    B.   127.0.0.0/8
+    C.   169.255.0.0/16
+    D.   172.16.0.0/12
+    E.   192.168.0.0/16
+
+Section: 109.1
+Explanation
+Explanation/Reference:
+#
+##
+###
+####
+#####
+Correct Answer: ADE
+
+
+QUESTION 3
+Which of the following commands configure network interfaces based on the system’s existing distribution-specific configuration files? (Choose two.)
+
+    A.   ifconf
+    B.   ifdown
+    C.   ifpause
+    D.   ifstart
+    E.   ifup
+
+Section: 109.3
+Explanation
+Explanation/Reference:
+#
+##
+###
+####
+#####
+Correct Answer: BE
+
+
+QUESTION 4
+Which of the following statements is true if the UID of a regular user is identical to the GID of a group?
+
+    A.   UID have precedence over GIDs, therefore the user is available while the group doesn’t.
+    B.   The user as well as the group are not available to avoid ambiguity due to the ID conflict.
+    C.   UIDs and GIDs are independent of each other, therefore the user as well as the group are still available.
+    D.   The user is the only member of the group, even if the group configuration contains other members.
+    E.   GIDs have precedence over UIDs, therefore the group is available while the user isn’t.
+
+Section: 107.1
+Explanation
+Explanation/Reference:
+#
+##
+###
+####
+#####
+Correct Answer: C
+
+
+QUESTION 5
+Which of the following information is stored in /etc/shadow for each user?
+
+    A. The timestamp of the user’s last login
+    B. The user’s private SSH keys
+    C. The hashed password of the user
+    D. The numerical user ID (UID)
+    E. The path to the user’s home directory
+
+Section: 107.1
+Explanation
+Explanation/Reference:
+#
+##
+###
+####
+#####
+Correct Answer: C
+
+
+QUESTION 6
+Which of the following commands shows all active systemd timers?
+
+    A.   systemctl-timer show
+    B.   timectl list
+    C.   systemctl –t
+    D.   systemctl list-timers
+    E.   timeq
+
+Section: 107.2
+Explanation
+Explanation/Reference:
+#
+##
+###
+####
+#####
+Correct Answer: D
+
+
+QUESTION 7
+Which of the following tasks can the date command accomplish? (Choose two.)
+
+    A.   Set the system’s date and time.
+    B.   Set the system’s date but not the time.
+    C.   Calculate the time span between two dates.
+    D.   Print a calendar for a month or a year.
+    E.   Display time in a specific format.
+
+Section: 108.1
+Explanation
+Explanation/Reference:
+#
+##
+###
+####
+#####
+Correct Answer: AE
+
+
+QUESTION 8
+FILL BLANK
+
+Which file, if present, must contain all users that are allowed to use the cron scheduling system? (Specify the full name of the file, including path.)
+
+Section: 107.2
+Explanation
+Explanation/Reference:
+#
+##
+###
+####
+#####
+Correct Answer: crontab   (nein, passt NICHT!) Richtig ist: /etc/cron.allow 
+
+
+QUESTION 9
+What can be specified with useradd? (Choose two.)
+
+    A.   Commands the user can run using sudo.
+    B.   The absolute path to the user’s home directory.
+    C.   Which printers are available for the new user.
+    D.   The SSH keys used to login to the new account.
+    E.   The numeric user ID (UID) of the user.
+
+Section: 107.1
+Explanation
+Explanation/Reference:
+
+#
+##
+###
+####
+#####
+Correct Answer: BE
+
+
+
+QUESTION 10
+What is true about the file /etc/localtime?
+
+    A. It is a plain text file containing a string such as Europe/Berlin
+    B. It is created and maintained by the NTP service based on the location of the system’s IP address.
+    C. It is a symlink to /sys/device/clock/ltime and always contains the current local time.
+    D. After changing this file, newtzconfig has to be run to make the changes effective.
+    E. It is either a symlink to or a copy of a timezone information file such as /usr/share/zoneinfo/Europe/Berlin.
+
+Section: 107.3, 108.1
+Explanation
+Explanation/Reference:
+#
+##
+###
+####
+#####
+Correct Answer: E
+
+QUESTION 11
+Which of the following statements is true regarding systemd timer units?
+
+    A.   Timer units can only be defined within a service unit’s file.
+    B.   The command executed by the timer is specified in the timer unit’s [Cmd] section.
+    C.   A dedicated system service, systemd-cron, handles the execution of timer units.
+    D.   Timer units only exist in the system scope and are not available for users.
+    E.   Each systemd timer unit controls a specific systemd service unit.
+
+Section: 107.2
+Explanation
+Explanation/Reference:
+#
+##
+###
+####
+#####
+Correct Answer: E
+
+
+QUESTION 12
+Which of the following fields are available in the standard format of both the global /etc/crontab file as well as in user-specific crontab files? (Choose two.)
+
+    A.   Year
+    B.   Minute
+    C.   Username
+    D.   Effective group ID
+    E.   Command
+
+Section: 107.2
+Explanation
+Explanation/Reference:
+#
+##
+###
+####
+#####
+Correct Answer: BE
+
+
+QUESTION 13
+Which of the following commands should be executed when starting a login shell in order to change the language of messages for an internationalized program to
+Portuguese (pt)?
+
+    A.   export LANGUAGE=“pt”
+    B.   export LC_MESSAGES=“pt”
+    C.   export UI_MESSAGES=“pt”
+    D.   export MESSAGE=“pt”
+    E.   export ALL_MESSAGES=“pt”
+
+Section: 107.3
+Explanation
+Explanation/Reference:
+#
+##
+###
+####
+#####
+Correct Answer: B
+
+
+QUESTION 14
+Which of the following files assigns a user to its primary group?
+
+    A.   /etc/pgroup
+    B.   /etc/shadow
+    C.   /etc/passwd
+    D.   /etc/group
+    E.   /etc/gshadow
+
+Section:  107.1
+Explanation
+Explanation/Reference:
+#
+##
+###
+####
+#####
+Correct Answer: C
+
+
+QUESTION 15
+Which of the following entries in /etc/syslog.conf writes all mail related events to the file /var/log/maillog and sends all critical events to the remote server logger.example.com?
+
+    A. mail.*              /var/log/maillog
+       mail,crit           @logger.example.org
+    B. mail.*              /var/log/maillog
+       mail.crit           syslog://logger.example.org
+    C. mail                /var/log/maillog
+       mail.crit           @logger.example.org
+    D. mail.*              /var/log/maillog
+       mail.crit           @logger.example.org
+    E. mail *              /var/log/maillog
+       mail crit           @logger.example.org
+
+Section: 108.2
+Explanation
+Explanation/Reference:
+#
+##
+###
+####
+#####
+Correct Answer: D
+
+
+QUESTION 16
+Which of the following protocols is related to the term open relay?
+
+    A.   SMTP
+    B.   POP3
+    C.   NTP
+    D.   IMAP
+    E.   LDAP
+
+Section: 108.3
+Explanation
+Explanation/Reference:
+#
+##
+###
+####
+#####
+Correct Answer: A
+
+
+QUESTION 17
+Which of the following commands displays all environment and shell variables?
+
+    A.   getargs
+    B.   lsenv
+    C.   ls
+    D.   env
+    E.   lsshell
+
+Section: 105.1
+Explanation
+Explanation/Reference:
+#
+##
+###
+####
+#####
+Correct Answer: D
+
+
+QUESTION 18
+Which of the following comparison operators for test work on elements in the file system? (Choose two.)
+
+    A.   –z
+    B.   –eq
+    C.   –d
+    D.   –f
+    E.   –lt
+
+Section: 105.2
+Explanation
+Explanation/Reference:
+#
+##
+###
+####
+#####
+Correct Answer: CD
+
+
+QUESTION 19
+What information is provided by the echo $$ command?
+
+    A. The process ID of the current shell.
+    B. The process ID for the following command.
+    C. The process ID of the last command executed.
+    D. The process ID of the last command which has been placed in the background.
+    E. The process ID of the echo command.
+
+Section: 105.1
+Explanation
+Explanation/Reference:
+#
+##
+###
+####
+#####
+Correct Answer: A
+
+
+QUESTION 20
+Which command makes the shell variable named VARIABLE visible to subshells?
+
+    A.   export $VARIABLE
+    B.   env VARIABLE
+    C.   set $VARIABLE
+    D.   set VARIABLE
+    E.   export VARIABLE
+
+Section: 105.1
+Explanation
+Explanation/Reference:
+#
+##
+###
+####
+#####
+Correct Answer: E
+
+
+QUESTION 21
+What output is produced by the following command sequence?
+
+  echo ‘1 2 3 4 5 6’ | while read a b c; do
+      echo result $c $b $a;
+  done
+
+    A.   result:   6   5   4
+    B.   result:   1   2   3   4   5   6
+    C.   result:   3   4   5   6   2   1
+    D.   result:   6   5   4   3   2   1
+    E.   result:   3   2   1
+
+Section: 105.2
+Explanation
+Explanation/Reference:
+#
+##
+###
+####
+#####
+Correct Answer: C
+
+
+QUESTION 22
+Which of the following configuration files should be modified to globally set shell variables for all users?
+
+    A.   /etc/profile
+    B.   /etc/bashrc
+    C.   ~/.bash_profile
+    D.   /etc/.bashrc
+    E.   /etc/shellenv
+
+Section: 105.1
+Explanation
+Explanation/Reference:
+#
+##
+###
+####
+#####
+Correct Answer: A
+
+
+QUESTION 23
+What output does the command seq 10 produce?
+
+    A.   A continuous stream of numbers increasing in increments of 10 until the command is stopped.
+    B.   It creates no output because a second parameter is missing.
+    C.   The number 0 through 9 with one number per line.
+    D.   The number 10 to standard output.
+    E.   The numbers 1 through 10 with one number per line.
+
+Section: 105.2
+Explanation
+Explanation/Reference:
+#
+##
+###
+####
+#####
+Correct Answer: E
+
+
+QUESTION 24
+Which of the following commands can be used to limit the amount of memory a user may use?
+
+    A.   umask
+    B.   usermod
+    C.   passwd
+    D.   ulimit
+    E.   chage
+
+Section:  110.1
+Explanation
+Explanation/Reference:
+#
+##
+###
+####
+#####
+Correct Answer: D
+
+
+QUESTION 25
+What is a purpose of an SSH host key?
+
+    A.   It must be sent by any SSH client in addition to a user key in order to identify the client’s host.
+    B.   It is root key by which all user SSH keys must be signed.
+    C.   It provides the server’s identity information to connecting SSH clients.
+    D.   It authenticates any user that logs into a remote machine from the key’s host.
+    E.   It is used by system services like cron, syslog or a backup job to automatically connect to remote hosts.
+
+Section: 110.3
+Explanation
+Explanation/Reference:
+#
+##
+###
+####
+#####
+Correct Answer: C
+
+
+QUESTION 26
+What is the purpose of TCP wrapper?
+
+    A.   Manage and adjust bandwidth used by TCP services.
+    B.   Bind a network service to a TCP port.
+    C.   Encapsulate TCP messages in IP packets.
+    D.   Add SSL support to plain text TCP services.
+    E.   Limit access to a network service.
+
+Section: 110.2
+Explanation
+Explanation/Reference:
+#
+##
+###
+####
+#####
+Correct Answer: E
+
+
+QUESTION 27
+Given the following excerpt of the sudo configuration:
+
+  jane ANY=NOPASSWD: /bin/kill, /bin/id, PASSWD: /sbin/fdisk
+
+Which of the following statements are true? (Choose three.)
+
+    A.   Jane can run /bin/id only after specifying her password.
+    B.   Jane can run /sbin/fdisk after specifying root’s password.
+    C.   Jane can run /sbin/fdisk after specifying her password.
+    D.   Jane can run /bin/kill without specifying a password.
+    E.   Jane can run /bin/id without specifying her password.
+
+Section: 110.1
+Explanation
+Explanation/Reference:
+#
+##
+###
+####
+#####
+Correct Answer: CDE
+
+
+QUESTION 28
+Which configuration file contains the default options for SSH clients?
+
+    A.   /etc/ssh/sshd_config
+    B.   /etc/ssh/ssh
+    C.   /etc/ssh/ssh_config
+    D.   /etc/ssh/client
+    E.   /etc/ssh/ssh_client
+
+Section: 110.3
+Explanation
+Explanation/Reference:
+#
+##
+###
+####
+#####
+Correct Answer: C
+
+
+QUESTION 29
+Depending on a system’s configuration, which of the following files can be used to enable and disable network services running on this host?
+
+    A.   /etc/profile
+    B.   /etc/xinetd.conf
+    C.   /etc/ports
+    D.   /etc/services
+    E.   /etc/host.conf
+
+Section: 110.2
+Explanation
+Explanation/Reference:
+#
+##
+###
+####
+#####
+Correct Answer: B
+
+
+QUESTION 30
+Which of the following commands can identify the PID od a process which opened a TCP port?
+
+    A.   ptrace
+    B.   strace
+    C.   debug
+    D.   lsof
+    E.   nessus
+
+Section: 110.1
+Explanation
+Explanation/Reference:
+#
+##
+###
+####
+#####
+Correct Answer: D
+
+
+QUESTION 31, FILL BLANK
+
+When using X11 forwarding in SSH, what environment variable is automatically set in the remote shell in order to help applications to connect to the correct X11 server? (Specify only the environment variable without any additional commands or values.)
+
+Section: 106.1
+Explanation
+Explanation/Reference:
+#
+##
+###
+####
+#####
+Correct Answer: DISPLAY
+
+
+QUESTION 32
+The X11 configuration file xorg.conf is grouped into section. How is the content of the section SectionName represented?
+
+    A.   It is placed in curly brackets as in Section SectionName {…}.
+    B.   It is placed between the tags <Section name=“SectionName”> and </Section>.
+    C.   It is placed between a line containing Section “SectionName” and a line containing EndSection.
+    D.   It is placed after the row [SectionName].
+    E.   It is placed after an initial unindented Section “SectionName” and must be indented by exactly one tab character.
+
+Section: 106.1
+Explanation
+Explanation/Reference:
+#
+##
+###
+####
+#####
+Correct Answer: C
+
+
+QUESTION 33
+Which of the following features are provided by SPICE? (Choose two.)
+
+    A.   Connecting local USB devices to remote applications.
+    B.   Accessing graphical applications on a remote host.
+    C.   Replacing Xorg as local X11 server.
+    D.   Downloading and locally installing applications from a remote machine.
+    E.   Uploading and running a binary program on a remote machine.
+
+Section: 106.2
+Explanation
+Explanation/Reference:
+#
+##
+###
+####
+#####
+Correct Answer: AB
+Siehe dazu https://www.examtopics.com/discussions/lpi/view/13654-exam-102-500-topic-1-question-52-discussion/
+
+
+QUESTION 34
+What is the systemd journal stored?
+
+    A.   /var/jlog/ and /var/jlogd/
+    B.   /proc/log/ and /proc/klog/
+    C.   /run/log/journal/ or /var/log/journal/
+    D.   /var/log/syslog.bin or /var/log/syslog.jrn
+    E.   /etc/systemd/journal/ or /usr/lib/systemd/journal/
+
+Section: 108.2
+Explanation
+Explanation/Reference:
+#
+##
+###
+####
+#####
+Correct Answer: C
+HINWEIS: Das Verzeichnis muss bei Debian manuell erzeugt werden (mkdir /var/log/journal), damit das Journal-Log 'system.journal' überhaupt einen Reboot überlebt! Siehe https://wiki.ubuntuusers.de/systemd/journald/
+
+
+QUESTION 35
+Which of the following is true regarding the command sendmail?
+
+    A.   With any MTA, the sendmail command must be run periodically by the cron daemon.
+    B.   When using systemd, sendmail is an alias to relayctl.
+    C.   The sendmail command prints the MTA’s queue history of which mails have been sent successfully.
+    D.   It is only available when the sendmail MTA is installed.
+    E.   All common MTAs, including Postfix and Exim, provide a sendmail command.
+
+Section: 108.3
+Explanation
+Explanation/Reference:
+#
+##
+###
+####
+#####
+Correct Answer: E
+
+
+QUESTION 36
+Which file inside the CUPS configuration directory contains the settings of the printers?
+
+    A.   cups-devices.conf
+    B.   snmp.conf
+    C.   printers.conf
+    D.   printcap.conf
+    E.   cupsd.conf
+
+Section: 108.4
+Explanation
+Explanation/Reference:
+#
+##
+###
+####
+#####
+Correct Answer: C
+
+
+QUESTION 37
+Which of the following parameters are used for journalctl to limit the time frame of the output? (Choose two.)
+
+    A.   --since=
+    B.   --from=
+    C.   --until=
+    D.   --upto=
+    E.   --date=
+
+Section: 108.2
+Explanation
+Explanation/Reference:
+#
+##
+###
+####
+#####
+Correct Answer: AC
+
+                                                                     https://www.gratisexam.com/
+QUESTION 38
+What is true regarding the file ~/.forward?
+
+    A.   When configured correctly ~/.forward can be used to forward each incoming mail to one or more other recipients.
+    B.   After editing ~/.forward the user must run newaliases to make the mail server aware of the changes.
+    C.   Using ~/.forward, root may configure any email address whereas all other users may configure only their own addresses.
+    D.   As ~/.forward is owned by the MTA and not writable by the user, it must be edited using the editaliases command.
+    E.   By default, only ~/.forward files of users in the group mailq are processed while all other user’s ~/.forward files are ignored.
+
+Section: 108.3
+Explanation
+Explanation/Reference:
+#
+##
+###
+####
+#####
+Correct Answer: A
+
+
+QUESTION 39
+Which of the following commands display a list of jobs in the print queue? (Choose two.)
+
+    A.   cups --list
+    B.   lprm -l
+    C.   lpstat
+    D.   lpr -q
+    E.   lpq
+
+Section: 108.4
+Explanation
+Explanation/Reference:
+#
+##
+###
+####
+#####
+Correct Answer: CE
+
+
+QUESTION 40
+On a system using systemd-journald, which of the following commands add the message Howdy to the system log? (Choose two.)
+
+    A. append Howdy
+    B. logger Howdy
+    C. systemd-cat echo Howdy
+    D. echo Howdy > /dev/journal
+    E. journalctl add Howdy
+
+Section: 108.2
+Explanation
+Explanation/Reference:
+#
+##
+###
+####
+#####
+Correct Answer: BC
+
+
+QUESTION 41
+Which of the following options in the chrony configuration file define remote time sources? (Choose two.)
+
+    A.   source
+    B.   clock
+    C.   remote
+    D.   pool
+    E.   server
+
+Section: 108.1
+Explanation
+Explanation/Reference:
+#
+##
+###
+####
+#####
+Correct Answer: DE
+
+
+QUESTION 42
+FILL BLANK
+
+Which command is used to sync the hardware clock to the system clock? (Specify only the command without any path or parameters.)
+
+Section: 108.1
+Explanation
+Explanation/Reference:
+#
+##
+###
+####
+#####
+Correct Answer: hwclock
+
+
+QUESTION 43
+Which of the following situations is observed and corrected by an NTP client?
+
+    A.   The skew in time between the system clock and the computer’s hardware clock.
+    B.   The physical location and the timezone configuration.
+    C.   Changes in the time zone of the current computer’s location.
+    D.   Adjustment needed to support Daylight Saving Time.
+    E.   The skew in time between the system clock and the reference clock.
+
+Section: 108.1
+Explanation
+Explanation/Reference:
+#
+##
+###
+####
+#####
+Correct Answer: E
+
+
+QUESTION 44
+If an alias ls exists, which of the following commands updates the alias to point to the command ls -l instead of the alias’s current target?
+
+    A.   set ls=’ls -l’
+    B.   alias ls=’ls -l’
+    C.   alias --force ls=’ls -l’
+    D.   alias --update ls ls=’ls -l’
+    E.   realias ls=’ls -l’
+
+Section: 105.1
+Explanation
+Explanation/Reference:
+#
+##
+###
+####
+#####
+Correct Answer: B
+
+
+QUESTION 45
+Which of the following commands puts the output of the command date into the shell variable mydate?
+
+    A. mydate=”date”
+    B. mydate=”exec date”
+    C. mydate=”$((date))”
+    D. mydate=”$(date)”
+    E. mydate=”${date}”
+
+Section: 105.1
+Explanation
+Explanation/Reference:
+#
+##
+###
+####
+#####
+Correct Answer: D
+
+
+QUESTION 46
+Which of the following files is not read directly by a Bash login shell?
+
+    A.   ~/.bashrc
+    B.   ~/.bash_profile
+    C.   ~/.bash_login
+    D.   ~/.profile
+    E.   /etc/profile
+
+Section: 105.1
+Explanation
+Explanation/Reference:
+#
+##
+###
+####
+#####
+Correct Answer: A
+
+
+QUESTION 47
+What is true about the file .profile in a user’s home directory?
+
+    A.   It must be executable.  (dt.: Es muss ausführbar sein)
+    B.   It must call the binary of the login shell.    (dt.: Es muss die Binärdatei der Login-Shell aufrufen.)
+    C.   It must use a valid shell script syntax.       (dt.: Es muss eine gültige Shell-Skriptsyntax verwenden.)
+    D.   It must start with a shebang.                  (dt.: Es muss mit einem Schebang beginnen.)
+    E.   It must be readable for its owner only.        (dt.: Es darf nur für den Besitzer lesbar sein)
+
+Section: 105.1
+Explanation
+Explanation/Reference:
+#
+##
+###
+####
+#####
+Correct Answer: C
+https://www.examtopics.com/discussions/lpi/view/31243-exam-102-500-topic-1-question-67-discussion/#
+
+
+QUESTION 48
+How does the ping command work by default?
+
+    A.   Is sends an ICMP Echo Request to a remote host and waits to receive an ICMP Echo Response in return.
+    B.   It sends an ARP request to a remote host and waits to receive an ARP response in return.
+    C.   It sends a TCP SYN packet to a remote host and waits to receive an TCP ACK response in return.
+    D.   Is sends a broadcast packet to all hosts on the net and waits to receive, among others, a response from the target system.
+    E.   It sends a UDP packet to port 0 of the remote host and waits to receive a UDP error response in return.
+
+Section: 109.1
+Explanation
+Explanation/Reference:
+#
+##
+###
+####
+#####
+Correct Answer: A
+
+
+QUESTION 49
+Which of the following commands display the number of bytes transmitted and received via the eth0 network interface? (Choose two.)
+
+    A.   route -v via eth0
+    B.   ip stats show dev eth0
+    C.   netstat -s -i eth0
+    D.   ifconfig eth0
+    E.   ip -s link show eth0
+
+Section: 109.3
+Explanation
+Explanation/Reference:
+#
+##
+###
+####
+#####
+Correct Answer: DE
+
+
+QUESTION 50
+Given the following routing table:
+
+  Kernel IP routing table
+  Destination     Gateway           Genmask         Flags Metric Ref    Use Iface
+  0.0.0.0         192.168.178.1     0.0.0.0         UG    0      0      0   wlan0
+  192.168.1.0     0.0.0.0           255.255.255.0   U     0      0      0   eth0
+  192.168.2.0     192.168.1.1       255.255.255.0   U     0      0      0   eth0
+  192.168.178.0   0.0.0.0           255.255.255.0   U     9      0      0   wlan0
+  
+How would an outgoing packet to the destination 192.168.2.150 be handled?
+
+    A.   It would be passed to the default router 192.168.178.1 on wlan0.
+    B.   It would be directly transmitted on the device eth0.
+    C.   It would be passed to the default router 255.255.255.0 on eth0.
+    D.   It would be passed to the router 192.168.1.1 on eth0.
+    E.   It would be directly transmitted on the device wlan0.
+
+Section: 109.3
+Explanation
+Explanation/Reference:
+#
+##
+###
+####
+#####
+Correct Answer: D
+
+
+QUESTION 51
+Which of the following commands will delete the default gateway from the system’s IP routing table? (Choose two.)
+
+    A.   ifconfig unset default
+    B.   route del default
+    C.   ip route del default
+    D.   netstat -r default
+    E.   sysctl ipv4.default_gw=0
+
+Section: 109.3
+Explanation
+Explanation/Reference:
+#
+##
+###
+####
+#####
+Correct Answer: BC
+
+
+QUESTION 52
+Which standardized TCP port is used by HTTPS services?
+
+    A.   25
+    B.   80
+    C.   8080
+    D.   443
+    E.   636
+
+Section: 109.1
+Explanation
+Explanation/Reference:
+#
+##
+###
+####
+#####
+Correct Answer: D
+
+
+QUESTION 53
+Which of the following environment variables can be defined in locale.conf? (Choose two.)
+
+    A.   LC_ALL
+    B.   LC_USERNAME
+    C.   LC_UTF8
+    D.   LC_GEOGRAPHY
+    E.   LC_TIME
+
+Section: 107.3
+Explanation
+Explanation/Reference:
+#
+##
+###
+####
+#####
+Correct Answer: AE
+
+
+QUESTION 54
+Which of the following commands sets the system’s time zone to the Canadian Eastern Time?
+
+    A. localegen -t -f /usr/share/zoneinfo/Canada/Eastern > /etc/locate.tz
+    B. tzconf /etc/localtime
+    C. sysctl -w clock.tz=’Canada/Eastern’
+    D. modprobe tz_ca_est
+    E. ln -sf /usr/share/zoneinfo/Canada/Eastern /etc/localtime
+
+Section: 107.3
+Explanation
+Explanation/Reference:
+#
+##
+###
+####
+#####
+Correct Answer: E
+
+
+QUESTION 55
+Which file contains the data of the last change of a user’s password?
+
+    A.   /etc/gshadow
+    B.   /etc/passwd
+    C.   /etc/pwdlog
+    D.   /var/log/shadow
+    E.   /etc/shadow
+
+Section:  107.1
+Explanation
+Explanation/Reference:
+#
+##
+###
+####
+#####
+Correct Answer: E
+
+
+QUESTION 56
+Which of the following fields can be found in the /etc/group file? (Choose two.)
+
+    A.   The home directory of the group.
+    B.   The list of users that belong to the group.
+    C.   The name of the group.
+    D.   The default group ACL.
+    E.   The description of the group.
+
+Section:  107.1
+Explanation
+Explanation/Reference:
+#
+##
+###
+####
+#####
+Correct Answer: BC
+
+
+QUESTION 57
+Which of the following sections exists in a systemd timer unit?
+
+    A.   [Events]
+    B.   [Timer]
+    C.   [cron]
+    D.   [Schedule]
+    E.   [Trigger]
+
+Section: 107.2
+Explanation
+Explanation/Reference:
+#
+##
+###
+####
+#####
+Correct Answer: B
+
+
+###### By Amir ##############
+
+QUESTION 58
+Which of the following connection types, as seen in nmcli connection show, may exist in NetworkManager? (Choose three.)
+
+    A.   tcp
+    B.   ethernet
+    C.   wifi
+    D.   ipv6
+    E.   bridge
+
+Section: 109.2
+Explanation
+Explanation/Reference:
+#
+##
+###
+####
+#####
+Correct Answer: BCE
+
+
+QUESTION 59
+On a Linux workstation, the route command takes a long time before printing out the routing table. Which of the following errors does that indicate?
+
+    A. The local routing information may be corrupted and must be re-validated using a routing protocol.
+    B. One of the routers in the routing table is not available which causes the automatic router failure detection mechanism (ARF-D) to wait for a timeout.
+    C. There may accidentally be more than one default router in which case a default router election has to be done on the network in order to choose one router as
+    the default.
+    D. The Linux Kernel Routing Daemon (LKRD) is not running and should be started using its init script or systemd unit.
+    E. DNS resolution may not be working as route by default tries to resolve names of routers and destinations and may run into a timeout.
+
+Section: 109.3
+Explanation
+Explanation/Reference:
+#
+##
+###
+####
+#####
+Correct Answer: E
+
+
+QUESTION 59
+Which of the following nmcli subcommands exist? (Choose two.)
+
+    A.   nmcli ethernet
+    B.   nmcli device
+    C.   nmcli wifi
+    D.   nmcli address
+    E.   nmcli connection
+
+Section: 109.2
+Explanation
+Explanation/Reference:
+#
+##
+###
+####
+#####
+Correct Answer: BE
+Weitere sind:
+ - general       NetworkManager's general status and operations
+ - networking    overall networking control
+ - radio         NetworkManager radio switches
+ - agent         NetworkManager secret agent or polkit agent
+ - monitor       monitor NetworkManager changes
+
+
+
+QUESTION 60
+Which of the following changes may occur as a consequence of using the command ip? (Choose three.)
+
+    A.   Network interfaces may become active or inactive.
+    B.   New name servers may be added to the resolver configuration.
+    C.   The system’s host name may change.
+    D.   IP addresses may change.
+    E.   The routing table may change.
+
+Section: 109.3
+Explanation
+Explanation/Reference:
+#
+##
+###
+####
+#####
+Correct Answer: ADE
+
+
+QUESTION 61
+Which option in the chrony configuration file changes the initial interval of polls to a NTP server in order to speed up the initial synchronization?
+
+    A.   iburst
+    B.   quickstart
+    C.   fast
+    D.   fsync
+    E.   flood
+
+Section: 108.1
+Explanation
+Explanation/Reference:
+#
+##
+###
+####
+#####
+Correct Answer: A
+
+
+QUESTION 62
+Why is the correct configuration of a system’s time zone important?
+
+    A.   Because the timezone is included in checksum calculations and timezone changes invalidate existing checksums.
+    B.   Because the time zone is saved as part of the modification times of files and cannot be changed after a file is created.
+    C.   Because the environment variables LANG and LC_MESSAGES are, by default, set according to the time zone.
+    D.   Because NTP chooses servers nearby based on the configured time zone.
+    E.   Because the conversion of Unix timestamps to local time relies on the time zone configuration.
+
+Section: 108.1
+Explanation
+Explanation/Reference:
+#
+##
+###
+####
+#####
+Correct Answer: E
+
+
+QUESTION 63
+Which of the following commands lists all queued print jobs?
+
+    A.   lpd
+    B.   lpr
+    C.   lp
+    D.   lsq
+    E.   lpq
+
+Section: 108.4
+Explanation
+Explanation/Reference:
+#
+##
+###
+####
+#####
+Correct Answer: E
+
+
+QUESTION 64
+Which of the following commands preloads and manages existing SSH keys that are used for automatic authentication while logging in to order machines using
+SSH?
+
+    A.   sshd
+    B.   ssh-keyring
+    C.   ssh-keygen
+    D.   ssh-pki
+    E.   ssh-agent
+
+Section: 110.3
+Explanation
+Explanation/Reference:
+#
+##
+###
+####
+#####
+Correct Answer: E
+
+
+
+QUESTION 65
+Which of the following is a valid IPv6 address?
+
+    A. 2001:db8:0g21::1
+    B. 2001::db8:4581::1
+    C. 2001:db8:3241::1
+    D. 2001%db8%9990%%1
+    E. 2001.db8.819f..1
+
+Section: 109.1
+Explanation
+Explanation/Reference:
+#
+##
+###
+####
+#####
+Correct Answer: C
+
+
+QUESTION 66
+Which if the following tools, used for DNS debugging, reports not only the response from the name sever but also details about the query?
+
+    A. dnsq
+    B. hostname
+    C. dig
+    D. dnslookup
+    E. zoneinfo
+
+Section: 109.4
+Explanation
+Explanation/Reference:
+#
+##
+###
+####
+#####
+Correct Answer: C
+
+
+QUESTION 67
+Which of the following statements is valid in the file /etc/nsswitch.conf?
+
+    A. multi on
+    B. 192.168.168.4 dns-server
+    C. namespaces: net mount procs
+    D. include /etc/nsswitch.d/
+    E. hosts: files dns
+    
+Section: 109.4
+Explanation
+Explanation/Reference:
+#
+##
+###
+####
+#####
+Correct Answer: E
+
+
+QUESTION 68
+What is true about the Hop Limit field in the IPv6 header?
+
+    A. The field is not changed during the transport of a package.
+    B. The field is transmitted within a hop-by-hop extension header.
+    C. Each router forwarding the packet increases the field's value.
+    D. Each router forwarding the packet decreases the field's value.
+    E. For multicast packages, the field's value is always 1.
+    
+Section: 109.1
+Explanation
+Explanation/Reference:
+#
+##
+###
+####
+#####
+Correct Answer: D
+
+
+QUESTION 69
+Which of the following configuration files does the logrotate program consult for its settings?
+
+    a) /etc/logrotate.conf
+    b) /usr/sbin/logrotate/logrotate.conf
+    c) /usr/src/logrotate/logrotate.conf
+    d) /etc/logrotate/.conf
+    e) ∼/.logrotate
+
+Section: 108.2
+Explanation
+Explanation/Reference:
+#
+##
+###
+####
+#####
+Correct Answer: A
+
+
+QUESTION 70
+Ordinary users report being unable to log onto a computer, but root has no problems doing so. What might you check to explain this situation?
+
+    a) A misbehaving syslogd daemon
+    b) A login process that's running as root
+    c) The presence of an /etc/nologin file
+    d) The presence of an SUID bit on /bin/login
+    e) Inappropriate use of shadow passwords
+
+Section: 110.2
+Explanation
+Explanation/Reference:
+#
+##
+###
+####
+#####
+Correct Answer: C
+
+
+QUESTION 71
+Which of the following summarizes the organization of the X configuration file?
+
+    a) The file contains multiple sections, one for each screen. Each section includes subsections for individual components (keyboard, video card, and so on).
+    b) Configuration options are entered in any order desired. Options relating to specific components (keyboard, video card, and so on) may be interspersed.
+    c) The file begins with a summary of individual screens. Configuration options are preceded by a code word indicating the screen to which they apply.
+    d) The file is broken into sections, one or more for each component (keyboard, video card, and so on). The file also has one or more sections that define how to combine the main sections.
+    e) The file is a rare binary configuration file that must be accessed using SQL database tools.
+
+Section: 106.1
+Explanation
+Explanation/Reference:
+#
+##
+###
+####
+#####
+Correct Answer: D
+
+
+QUESTION 72
+In what environment variable is the current working directory stored?
+
+    a) PATH
+    b) CWD
+    c) PWD
+    d) PRESENT
+    e) WORKING
+
+Section: 105.1
+Explanation
+Explanation/Reference:
+#
+##
+###
+####
+#####
+Correct Answer: C
+
+
+QUESTION 73
+Which of the following tasks are most likely to be handled by a cron job? (Select two.)
+
+    a) Starting an important server when the computer boots
+    b) Finding and deleting old temporary files
+    c) Scripting supervised account creation
+    d) Monitoring disk partition space status and emailing a report
+    e) Sending files to a printer in an orderly manner
+
+Section: 107.2
+Explanation
+Explanation/Reference:
+#
+##
+###
+####
+#####
+Correct Answer: BD
+
+
+QUESTION 74
+How can you learn what programs are currently accessing the network on a Linux system?
+
+    a) Type ifconfig -p eth0.
+    b) Examine /proc/network/programs.
+    c) Type netstat -p.
+    d) Examine /etc/xinetd.conf.
+    e) Type dmesg | less
+
+Section: 109.3
+Explanation
+Explanation/Reference:
+#
+##
+###
+####
+#####
+Correct Answer: C
+
+
+QUESTION 75
+What is an advantage of a font server?
+
+    a) It provides faster font displays than are otherwise possible.
+    b) It can simplify font maintenance on a network with many X servers.
+    c) It's the only means of providing TrueType support for XFree86 4.x.
+    d) It enables the computer to turn a bitmapped display into an ASCII text file.
+    e) It enables X to use font smoothing, which isn't possible with core fonts.
+
+Section: 106.1
+Explanation
+Explanation/Reference:
+#
+##
+###
+####
+#####
+Correct Answer: B
+
+
+QUESTION 76
+Which environment variable stores the format for the command prompt?
+
+    a) PROMPT
+    b) PSI
+    c) PAGER
+    d) PS1
+    e) None of these variables store the format for the command prompt.
+
+Section: 105.1
+Explanation
+Explanation/Reference:
+#
+##
+###
+####
+#####
+Correct Answer: D
+
+
+QUESTION 77
+CORRECT TEXT: Which command is used to set the hostname of the local system? (Specify only the command without any path or parameters.)
+
+Section: 109.3
+Explanation
+Explanation/Reference:
+#
+##
+###
+####
+#####
+Correct Answer: hostname
+    
+
+QUESTION 78
+What command, depending on its options, can display the open TCP connections, the routing tables, as well as network interface statistics? (Specify only the command without any path or parameters.)
+
+Section: 109.3
+Explanation
+Explanation/Reference:
+#
+##
+###
+####
+#####
+Correct Answer: netstat
+
+
+QUESTION 79
+Which command included in NetworkManager is a curses application which provides easy acces to the NetworkManager on the command line? (Specify only the command without any path or parameters.)
+
+Section: 109.2
+Explanation
+Explanation/Reference:
+#
+##
+###
+####
+#####
+Correct Answer: nmtui
+
+
+QUESTION 80
+Which of the following steps prevents a user from obtaining an interactive login session?
+
+    A. Setting the UID for the user to 0.
+    B. Running the command chsh -s /bin/false with the user name.
+    C. Removing the user from the group staff.
+    D. Adding the user to /etc/noaccess.
+    E. Creating a .nologin file in the user’s home directory.
+
+Section: 107.1
+Explanation
+Explanation/Reference:
+#
+##
+###
+####
+#####
+Correct Answer: B
+
+
+QUESTION 81
+FILL BLANK: Which command included in systemd supports selecting messages from the systemd journal by criteria such as time or unit name? (Specify only the command without any path or parameters.)
+
+Section: 108.2
+Explanation
+Explanation/Reference:
+#
+##
+###
+####
+#####
+Correct Answer: journalctl
+
+
+QUESTION 82
+Which of the following statements about sytemd-journald are true? (Choose three.)
+
+    A.   It is incompatible with syslog and cannot be installed on a system using regular syslog.
+    B.   It only processes messages of systemd and not messages of any other tools.
+    C.   It can pass log messages to syslog for further processing.
+    D.   It maintains metadata such as _UID or _PID for each message.
+    E.   It supports syslog facilities such as kern, user, and auth.
+
+Section: 108.2
+Explanation
+Explanation/Reference:
+#
+##
+###
+####
+#####
+Correct Answer: CDE
+
+
+QUESTION 83
+FILL BLANK: Which command must be run after adding a new email alias to the configuration in order to make this change effective? (Specify the command without any path but including all required parameters.)
+
+Section: 108.3
+Explanation
+Explanation/Reference:
+#
+##
+###
+####
+#####
+Correct Answer: newaliases
+
+
+QUESTION 84
+Which of the following commands is used to rotate, compress, and mail system logs?
+
+    A. logrotate
+    B. striplog
+    C. syslogd –-rotate
+    D. rotatelog
+    E. logger
+
+Section: 108.2
+Explanation
+Explanation/Reference:
+#
+##
+###
+####
+#####
+Correct Answer: A
+
+
+QUESTION 85
+Which command, available with all sendmail-compatible MTAs, is used to list the contents of the MTA’s mail queue? (Specify only the command without any path or parameters.)
+
+Section: 108.3
+Explanation
+Explanation/Reference:
+#
+##
+###
+####
+#####
+Correct Answer: mailq
+
+
+QUESTION 86
+FILL BLANK: What is the top-level directory which contains the configuration files for CUPS? (Specify the full path to the directory.)
+
+Section: 108.4
+Explanation
+Explanation/Reference:
+#
+##
+###
+####
+#####
+Correct Answer: /etc/cups/
+Aus https://www.examtopics.com/discussions/lpi/view/14851-exam-102-500-topic-1-question-29-discussion/ stammt folg.: "Don't forget to add the last "/" when you are asked to enter directory name, or it would be a file name without the last "/"."
+
+
+QUESTION 87
+FILL BLANK: What command list the aliases defined in the current Bash shell? (Specify only the command without any path or parameters.)
+
+Section: 105.1
+Explanation
+Explanation/Reference:
+#
+##
+###
+####
+#####
+Correct Answer: alias
+
+
+QUESTION 88
+FILL BLANK: The presence of what file will temporarily prevent all users except root from logging into a system? (Specify the full name of the file, including path.)
+
+Section: 110.2
+Explanation
+Explanation/Reference:
+#
+##
+###
+####
+#####
+Correct Answer: /etc/nologin
+
+
+QUESTION 89
+On a machine running several X servers, how do programs identify the different instances of the X11 server?
+
+    A. By a fixed UUID that is defined in the X11 configuration file.
+    B. By a display name like :1.
+    C. By the name of the user that runs the X server like x11:bob.
+    D. By a device name like /dev/X11/xservers/1.
+    E. By a unique IPv6 address from the fe80::/64 subnet.
+
+Section: 106.1
+Explanation
+Explanation/Reference:
+#
+##
+###
+####
+#####
+Correct Answer: B
+
+
+QUESTION 90
+What is the purpose of a screen reader?
+
+    A.   It manages virtual keyboards on touch screen displays.
+    B.   It reads the parameters of the attached monitors and creates an appropriate X11 configuration.
+    C.   It displays lines and markers to help people use speed reading techniques.
+    D.   It manages and displays files that contain e-books.
+    E.   It reads displayed text to accommodate the needs of blind or visually impaired people.
+
+Section: 106.3
+Explanation
+Explanation/Reference:
+#
+##
+###
+####
+#####
+Correct Answer: E
+HINWEIS: Typische screen reader sind emacspeak und orca.
+
+
+What is the purpose of the Sticky Keys feature in X?
+
+    A. To assist users who have difficulty holding down multiple keys at once
+    B. To prevent repeated input of a single character if the key is held down
+    C. To ignore brief keystrokes according to a specified time limit
+    D. To repeat the input of a single character
+
+Section: 106.3
+Explanation
+Explanation/Reference:
+#
+##
+###
+####
+#####
+Richtige Antwort: A
+HINWEIS: Ein veraltetes Programm nennt sich GOK (Gnome Onscreen Keyboard)
+
+
+Q: Ashton has issues pressing multiple keys on the keyboard at the same time. He turns on an accessibility feature that allows him to press the shift key and then a letter in order to get a capital letter when typing. What is the name of the feature that Ashton enabled?
+#
+Section: 106.3
+#
+##
+###
+#####
+######
+RICHTIGE A.: sticky keys
+
+
+Q: Jackie wants to configure journald to forward all events to the System Log daemon. Which of the following files should she modify to enable this setting?
+A: /etc/systemd/journald.conf
+## Section: 108.2
+
+What is the purpose of the file /etc/profile?
+
+    A. It contains the welcome message that is displayed after login.
+    B. It contains security profiles defining which users are allowed to log in.
+    C. It contains environment variables that are set when a user logs in.
+    D. It contains default application profiles for users that run an application for the first time.
+
+Topic 105.1
+#
+##
+###
+####
+#####
+RICHTIGE ANTWORT: C
+
+
+When the command echo $? outputs 1, which of the following statements is true?
+
+    A. It is the process ID of the echo command.
+    B. It is the process ID of the current shell.
+    C. It is the exit value of the command executed immediately before echo.
+    D. It is the exit value of the echo command.
+    
+Topic 105.1
+#
+##
+###
+####
+#####
+RICHTIGE ANTWORT: C
+
+
+What output will the following command produce?
+
+  seq 1 5 20
+
+    A. 1 6 11 16
+    B. 1 5 10 15
+    C. 1 2 3 4
+    D. 2 3 4 5
+    E. 5 10 15 20
+
+Topic 105.2
+#
+##
+###
+####
+#####
+RICHTIGE ANTWORT: A
+
+
+Which of the following files, when existing, affect the behavior of the Bash shell?
+(Choose TWO correct answers.)
+
+    A. ~/.bashconf
+    B. ~/.bashrc
+    C. ~/.bashdefaults
+    D. ~/.bash_etc
+    E. ~/.bash_profile
+
+Topic: 105.1
+#
+##
+###
+####
+######
+#######
+########
+RICHTIGE ANTWORT: BE
+
+
+When the command echo $$ outputs 12942, what is the meaning of 12942?
+
+    A. It is the process ID of the echo command.
+    B. It is the process ID of the current shell.
+    C. It is the process ID of the last command executed.
+    D. It is the process ID of the last command which has been placed in the background.
+
+Topic 105.1
+#
+##
+###
+####
+#####
+RICHTIGE ANTWORT: B
+
+
+Which of the following are requirements in order to run a shell script like a regular
+command from anywhere in the filesystem? (Choose THREE correct answers.)
+
+    A. The user issuing the command must be in the group script.
+    B. The script file must be found in the $PATH.
+    C. The script file must have the executable permission bit set.
+    D. The script must begin with a shebang-line (#!) that points to the correct interpreter.
+    E. The file system on which the script resides must be mounted with the option scripts.
+
+Topic 105.1
+#
+##
+###
+####
+#####
+RICHTIGE ANTWORT: B C D
+
+
+------- Weitere Fragen zum NetworkManager ------------
+
+https://www.examtopics.com/discussions/lpi/view/30425-exam-102-500-topic-1-question-83-discussion/
+
+Actual exam question from LPI's 102-500
+Question #: 83
+Topic #: 1
+[All 102-500 Questions]
+Which of the following states can NetworkManager show regarding the system's network connectivity? (Choose two.)
+
+    A. up
+    B. portal
+    C. full
+    D. login-required
+    E. firewalled
+
+Section: 109.2
+#
+##
+###
+####
+Show Suggested Answer
+by Thi_86 at Sept. 3, 2020, 1:25 a.m.
+Comments
+￼
+Submit
+Thi_86 4 months, 2 weeks ago
+I don't see this value "Portal" in anyplace.
+upvoted 1 times
+yigido 4 months, 2 weeks ago
+none: the host is not connected to any network.
+portal: the host is behind a captive portal and cannot reach the full Internet.
+limited: the host is connected to a network, but it has no access to the Internet.
+full: The host is connected to a network and has full access to the Internet.
+unknown: The connectivity status cannot be found out.
+upvoted 4 times
+comanchero 1 month, 1 week ago
+Correct answare are B) and C) man NetworkManager search word portal :
+CONNECTIVITY_STATE
+The network connectivity state, which can take the values defined by the NMConnectivityState type, from the org.freedesktop.NetworkManager D-Bus API: unknown, none, portal, limited or full. Note: this variable will only be set for connectivity-change actions.
+upvoted 1 times
+
+
+---
+
+https://www.examtopics.com/discussions/lpi/view/34086-exam-102-500-topic-2-question-12-discussion/
+
+Actual exam question from LPI's 102-500
+Question #: 12
+Topic #: 2
+[All 102-500 Questions]
+What is true about the following command?
+nmcli device wifi connect WIFIoI
+
+    A. NetworkManager opens a new public hotspot with the SSID WIFIoI.
+    B. NetworkManager creates an unconfigured new virtual network interface named WIFIoI.
+    C. NetworkManager creates a new wifi connection WIFIoI and activates it.
+    D. NetworkManager returns an error in case the connection WIFIoI does not exist.
+    E. NetworkManager returns an error because WIFIoI is an invalid wifi device.
+    
+Section: 109.2
+#
+##
+###
+####
+Show Suggested Answer
+by Thuanvd at Oct. 9, 2020, 6:05 a.m.
+Comments
+￼
+Submit
+Thuanvd 3 months, 1 week ago
+D is the correct one
+upvoted 3 times
+MIU 1 month, 3 weeks ago
+this is C
+upvoted 1 times
+Scipions 2 weeks, 3 days ago
+The command finds a matching connection or creates one and then activates it on a device.
+Te do na' man... è la C
+upvoted 4 times
+Rini_Giannenzo 1 week ago
+tutto bene sulla casilina ?
+upvoted 2 times
+Audio00_02 1 week ago
+pure british
+upvoted 2 times
+inittab_ah_no 6 days, 6 hours ago
+google traslate
+upvoted 1 times
+
+
+---
+
+
+What is true about NetworkManager on a Linux system that uses its distribution's mechanisms to configure network interfaces? (Choose two.)
+    A. NetworkManager reconfigures all network interfaces to use DHCP unless they are specifically managed by NetworkManager.
+    B. NetworkManager must be explicitly enabled for each interface it should manage.
+    C. NetworkManager by default does not change interfaces which are already configured.
+    D. NetworkManager disables all interfaces which were not configured by NetworkManager.
+    E. NetworkManager can be configured to use the distribution's network interface configuration.
+    
+Section: 109.2
+#
+##
+###
+####
+Correct Answer: BC
+https://www.examtopics.com/discussions/lpi/view/74949-exam-102-500-topic-1-question-103-discussion/
+
+nepechon 1 year, 10 months ago
+https://networkmanager.dev/docs/admins/ - By default NetworkManager manages all devices found on the system. If you plan to configure an interface manually or through some other tool, you should tell NetworkManager to not manage it. - so it's not B
+upvoted 1 times
+
+drliu1202 2 years, 1 month ago
+Selected Answer: BC
+"By default, the NetworkManager daemon controls the network interfaces not mentioned in the /etc/network/interfaces file. It does so to not interfere with other configuration methods that may be present as well, thus modifying the unattended interfaces only."
+ https://learning.lpi.org/en/learning-materials/102-500/109/109.2/109.2_02/#:~:text=By%20default%2C%20the%20NetworkManager%20daemon%20controls%20the%20network%20interfaces%20not%20mentioned%20in%20the%20/etc/network/interfaces%20file.%20It%20does%20so%20to%20not%20interfere%20with%20other%20configuration%20methods%20that%20may%20be%20present%20as%20well%2C%20thus%20modifying%20the%20unattended%20interfaces%20only.
+upvoted 3 times
+
+drliu1202 2 years, 1 month ago
+Sorry.
+The answer is C &  E.
+NetworkManager will auto detect network interfaces.
+upvoted 3 times
+
+Lazylinux 2 years, 5 months ago
+Selected Answer: BC
+BC is correct
+
+Die Frage via deepl.com uebersetzt:
+Was trifft auf NetworkManager auf einem Linux-System zu, das die Mechanismen seiner Distribution zur Konfiguration von Netzwerkschnittstellen verwendet? (Wählen Sie zwei.)
+    A. NetworkManager konfiguriert alle Netzwerkschnittstellen so um, dass sie DHCP verwenden, 
+	sofern sie nicht speziell von NetworkManager verwaltet werden.
+    B. NetworkManager muss für jede Schnittstelle, die er verwalten soll, explizit aktiviert werden.
+    C. NetworkManager aendert standardmaessig keine Schnittstellen, die bereits konfiguriert sind.
+    D. NetworkManager deaktiviert alle Schnittstellen, die nicht von NetworkManager konfiguriert wurden.
+    E. NetworkManager kann so konfiguriert werden, dass er die Netzwerkschnittstellenkonfiguration der Distribution verwendet.
+
+Sehr wahrscheinlich sind C und E richtig (nach eingehenden Tests und Beobachtungen).

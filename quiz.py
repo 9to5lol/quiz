@@ -140,6 +140,7 @@ def run_quiz(questions,cnt):
 if __name__ == "__main__":
     cnt = int(sys.argv[1])
     questions = []
-    questions += parse_questions("101-by.axel-mixed.txt")
-    questions += parse_questions("fragen-github.txt")
+    #questions += parse_questions("101-by.axel-mixed.txt")
+    questions += parse_questions("102-by.axel-mixed.txt")
+    #questions += parse_questions("fragen-github.txt")
     run_quiz(questions,cnt)
